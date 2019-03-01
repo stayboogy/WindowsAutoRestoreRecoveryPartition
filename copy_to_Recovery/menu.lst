@@ -1,0 +1,14 @@
+write (md)0x220+1 !BAT\necho -n -P:0000 $[0133]                      --- BOOT MENU ---                                         \0                              
+initscript (md)0x220+1
+
+default 0
+timeout 3
+
+title WINDOWS\n
+errorcheck off
+find --set-root /ntldr || find --set-root /bootmgr
+chainloader /ntldr || chainloader /bootmgr
+
+title RECOVERY\nThis will restore Windows to its original state
+find --set-root /recovery.tag
+chainloader /bootmgr
