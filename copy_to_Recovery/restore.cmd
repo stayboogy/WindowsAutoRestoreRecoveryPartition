@@ -38,7 +38,7 @@ echo lis vol>> x:\dp.scr
 echo exit>> x:\dp.scr
 diskpart /s x:\dp.scr
 echo Applying the image - please wait...
-DISM /Apply-Image /ImageFile:%DRIVE%\refresh.wim /ApplyDrive:%DRV% /index:1 
+DISM /Apply-Image /ImageFile:%DRIVE%\refresh.wim /ApplyDir:%DRV% /index:1 
 wpeutil reboot
 
 
