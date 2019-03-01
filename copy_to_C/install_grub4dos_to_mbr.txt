@@ -1,0 +1,1 @@
+install grub4dos to mbr of Windows hard drive with RMPrepUSB by pressing ctrl+F5 after it's loaded

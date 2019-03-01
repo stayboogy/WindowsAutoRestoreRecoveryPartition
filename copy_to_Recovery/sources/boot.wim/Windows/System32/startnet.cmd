@@ -1,0 +1,3 @@
+wpeinit
+call autorestore.cmd
+
